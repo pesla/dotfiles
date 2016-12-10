@@ -33,6 +33,9 @@ My dotfiles have the following purposes:
 3. Configure important tools (git, vim)
 4. Add some aliases and functions
 
+If you're about to configure a new Mac (or do a fresh install), check out [this repository](https://github.com/pesla/setup-macos)
+ in which I explain how I install OS X in more detail.
+
 ## Feedback
 
 Suggestions/improvements [welcome](https://github.com/pesla/dotfiles/issues).
