@@ -39,3 +39,6 @@ for file in ~/.{path,exports,aliases,functions,private}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Load rbenv
+eval "$(rbenv init -)"
