@@ -60,6 +60,9 @@
 	# List contributors with number of commits
 	contributors = shortlog --summary --numbered
 
+	# Checkout new branch and push to origin
+	cp = "!f() { git checkout -b \"$1\" && git push origin -u \"$1\"; }; f"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
