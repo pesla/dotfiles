@@ -63,6 +63,9 @@
 	# Checkout new branch and push to origin
 	cp = "!f() { git checkout -b \"$1\" && git push origin -u \"$1\"; }; f"
 
+	# Push diff to www0
+	diff2www0 = "!f() { git diff | ssh www-data@www0 \"cd $1; echo 'Resetting to HEAD'; git reset HEAD --hard; echo 'Applying patch'; git apply; git status\"; }; f"
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
