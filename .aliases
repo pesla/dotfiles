@@ -150,3 +150,6 @@ alias reload="exec $SHELL -l"
 
 # Print each PATH entry on a separate line
 alias path='echo -e ${PATH//:/\\n}'
+
+# Open QuarkXpress 2016 (opening using Finder results in instant crash)
+alias quark="'/Applications/QuarkXPress 2016/QuarkXPress 2016.app/Contents/MacOS/QuarkXPress' > /dev/null 2>&1 &"
