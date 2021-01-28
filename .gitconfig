@@ -15,8 +15,8 @@
 	# `git di $number` shows the diff between the state `$number` revisions ago and the current state
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+	# Pull in remote changes for the current repository and all its submodules.
+    p = pull --recurse-submodules
 
 	# Clone a repository including all submodules
 	c = clone --recursive
@@ -62,9 +62,6 @@
 
 	# Checkout new branch and push to origin
 	cp = "!f() { git checkout -b \"$1\" && git push origin -u \"$1\"; }; f"
-
-	# Push diff to www0
-	diff2www0 = "!f() { git diff | ssh www-data@www0 \"cd $1; echo 'Resetting to HEAD'; git reset HEAD --hard; echo 'Applying patch'; git apply; git status\"; }; f"
 
 [apply]
 

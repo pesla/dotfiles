@@ -21,7 +21,7 @@ $ ./sync.sh
 
 You'll find yourself tuning your systems configuration every now and then. Make sure to edit the dotfiles in the git repository
  and `rsync` them back to your home directory (by running `sync.sh`).
- 
+
 ## The dotfiles and their purpose
 
 Dotfiles are used to customize your system. The “dotfiles” name is derived from the configuration files in Unix-like systems that start with a dot (e.g. `.bash_profile` and `.gitconfig`). For regular users, this indicates they are not normal documents, and by default they are hidden in directory listings.
@@ -29,9 +29,8 @@ Dotfiles are used to customize your system. The “dotfiles” name is derived f
 My dotfiles have the following purposes:
 
 1. Configure bash shells (main entry is `.bashrc`)
-2. Configure zsh shells (see `.zshrc`)
-3. Configure important tools (git, vim)
-4. Add some aliases and functions
+2. Configure important tools (git, bash)
+3. Add some aliases and functions
 
 If you're about to configure a new Mac (or do a fresh install), check out [this repository](https://github.com/pesla/setup-macos)
  in which I explain how I install OS X in more detail.
